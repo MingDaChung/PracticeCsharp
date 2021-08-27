@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Practice
 {
@@ -698,16 +700,247 @@ namespace Practice
 
             //Q69
             //.ToLower and .ToUpper are change all char to Lower or Upper 
-            string str1 = "AAAAA";
-            string str2 = "aaaaa";
-            string str3 = "JavaScript";
-            Console.WriteLine(check(str1));
-            Console.WriteLine(check(str2));
-            Console.WriteLine(check(str3));
+            //string str1 = "AAAAA";
+            //string str2 = "aaaaa";
+            //string str3 = "JavaScript";
+            //Console.WriteLine(check(str1));
+            //Console.WriteLine(check(str2));
+            //Console.WriteLine(check(str3));
 
-            static bool check(string str)
+            //static bool check(string str)
+            //{
+            //    return str == str.ToLower() | str == str.ToUpper();
+            //}
+
+            //Q70
+            //string str1 = "PHP";
+            //string str2 = "Python";
+            //string str3 = "Javascript";
+
+            //Console.WriteLine(check(str1));
+            //Console.WriteLine(check(str2));
+            //Console.WriteLine(check(str3));
+
+            //static string check(string str)
+            //{
+            //    return str.Substring(1, str.Length - 2);
+            //}
+
+            //Q71
+            //string str1 = "PHHHHHHP";
+            //string str2 = "PHP";
+            //string str3 = "PPPHHHHHHP";
+
+            //Console.WriteLine(check(str1));
+            //Console.WriteLine(check(str2));
+            //Console.WriteLine(check(str3));
+
+            //static bool check(string str)
+            //{
+            //    for (int i = 0; i < str.Length - 1; i++)
+            //    {
+            //        if (str[i] == str[i + 1])
+            //        {
+            //            return true;
+            //            break;
+            //        }
+            //    }
+            //    return false;
+            //}
+
+            //Q72
+            //int[] num1 = { 1, 2, 3, 5, 4, 2, 3, 4 };
+            //int[] num2 = { 2, 4, 2, 6, 4, 8 };
+
+
+            //Console.WriteLine(check(num1));
+            //Console.WriteLine(check(num2));
+
+            //static bool check(int[] num)
+            //{
+            //    int sum = 0;
+            //    for (int i = 0; i < num.Length; i++)
+            //    {
+            //        //Console.WriteLine("{0} + {1} = " , sum , num[i]);
+            //        sum = sum + num[i];
+            //        //Console.WriteLine(sum);
+            //    }
+            //    if (sum % (num.Length) == 0)
+            //    {
+            //        return true;
+            //    }
+            //    return false;
+            //}
+
+            //Q73
+            //string str1 = "PHP";
+            //string str2 = "python";
+            //string str3 = "javascript";
+
+            //Console.WriteLine(check(str1));
+            //Console.WriteLine(check(str2));
+            //Console.WriteLine(check(str3));
+
+            //static string check(string str)
+            //{
+            //    return new string(str.OrderBy(x => x).ToArray());
+            //}
+
+            //Q74
+            //string str1 = "PHP";
+            //string str2 = "python";
+            //string str3 = "javascript";
+
+            //Console.WriteLine(check(str1));
+            //Console.WriteLine(check(str2));
+            //Console.WriteLine(check(str3));
+
+            //static string check(string str)
+            //{
+            //    string checkpoint = "";
+            //    if(str.Length%2 == 0)
+            //    {
+            //        return checkpoint = "even";
+            //    }
+            //    return checkpoint = "odd";
+            //}
+
+            //Q75
+            //Console.WriteLine("Input a positive number : ");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(check(num));
+
+            //static int check(int num)
+            //{
+            //    int ans = 0;
+            //    for(int i=0; i <= num; i++) {
+            //        ans = (2*i)-1;
+            //    }
+            //    return ans;
+            //}
+
+            //Q76
+
+            //char cha1 = '1';
+            //char cha2 = 'A';
+            //char cha3 = 'a';
+            //char cha4 = '#';
+
+            //Console.WriteLine("ASCII of {0} is : {1}", cha1, check(cha1));
+            //Console.WriteLine("ASCII of {0} is : {1}", cha2, check(cha2));
+            //Console.WriteLine("ASCII of {0} is : {1}", cha3, check(cha3));
+            //Console.WriteLine("ASCII of {0} is : {1}", cha4, check(cha4));
+
+            //static int check(char cha)
+            //{
+            //    return (int)cha;
+            //}
+
+            //Q77
+            //Can use .EndWith()
+            //string str1 = "Exercise";
+            //string str2 = "Exercises";
+            //string str3 = "Book";
+            //string str4 = "Books";
+
+            //Console.WriteLine("Is {0} is plural : {1}", str1, check(str1));
+            //Console.WriteLine("Is {0} is plural : {1}", str2, check(str2));
+            //Console.WriteLine("Is {0} is plural : {1}", str3, check(str3));
+            //Console.WriteLine("Is {0} is plural : {1}", str4, check(str4));
+
+            //static bool check(string str)
+            //{
+            //    //if (str.Substring(str.Length - 1) == "s")
+            //    //{
+            //    //    return true;
+            //    //}
+
+            //    //return false;
+
+            //    return str.EndsWith("s");
+            //}
+
+            //Q78
+            //int[] num1 = { 1, 2, 3 };
+            //int[] num2 = { -2, 0, 3, 4 };
+
+            //Console.WriteLine("Ans : {0}", check(num1));
+            //Console.WriteLine("Ans : {0}", check(num2));
+
+            //static int check(int[] num)
+            //{
+            //    return num.Sum(x => x * x);
+            //}
+
+            //Q79
+            //int test1 = 112;
+            //string test1a = inttostr(test1);
+            //string test2 = "50";
+            //int test2a = strtoint(test2);
+
+            //Console.WriteLine("{0}'s type is {1} => {2}'s type is {3}", test1, test1.GetType(), test1a, test1a.GetType());
+            //Console.WriteLine("{0}'s type is {1} => {2}'s type is {3}", test2, test2.GetType(), test2a, test2a.GetType());
+
+            //static int strtoint(string str)
+            //{
+            //    return int.Parse(str);
+            //}
+
+            //static string inttostr(int num)
+            //{
+            //    return num.ToString();
+            //}
+
+            //Q80
+
+            //object[] test = new object[5];
+            //test[0] = 25;
+            //test[1] = "Anna";
+            //test[2] = false;
+            //test[3] = DateTime.Now;
+            //test[4] = 199.12;
+
+            //for(int i = 0; i < test.Length ; i++)
+            //{
+            //    Console.WriteLine("Value : {0} , Type : {1}", test[i], test[i].GetType());
+            //}
+
+            //Console.WriteLine("\n\n");
+            //string[] testtostring = tostring(test);
+
+            //for(int i = 0; i < testtostring.Length; i++)
+            //{
+            //    Console.WriteLine("Value : {0} , Type : {1}", testtostring[i], testtostring[i].GetType());
+            //}
+
+            //static string[] tostring(object[] obj)
+            //{
+            //    return Array.ConvertAll(obj , x => x.ToString());
+            //}
+
+            //Q81
+            //Console.WriteLine("Input a number : ");
+            //int test = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("十位數大於個位數 : {0}", check(test));
+
+            //static bool check(int num)
+            //{
+            //    return (num / 10) >= num % 10;
+            //}
+
+            //Q82
+            string str1 = "Py@th12on";
+            string str2 = "Python 3.0";
+            string str3 = "2^sdfds*^*^jlljdslfnoswje34u230sdfds984";
+
+            Console.WriteLine("Orginal : {0}\nChanged : {1}", str1, check(str1));
+            Console.WriteLine("Orginal : {0}\nChanged : {1}", str2, check(str2));
+            Console.WriteLine("Orginal : {0}\nChanged : {1}", str3, check(str3));
+
+            static string check(string str)
             {
-                return str == str.ToLower() | str == str.ToUpper();
+                return Regex.Replace(str, @"[^a-zA-Z]", "");
             }
         }
     }
