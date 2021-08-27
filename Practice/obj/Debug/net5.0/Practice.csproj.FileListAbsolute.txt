@@ -1,0 +1,16 @@
+D:\Visual Stdio\Practice\Practice\bin\Debug\net5.0\Practice.exe
+D:\Visual Stdio\Practice\Practice\bin\Debug\net5.0\Practice.deps.json
+D:\Visual Stdio\Practice\Practice\bin\Debug\net5.0\Practice.runtimeconfig.json
+D:\Visual Stdio\Practice\Practice\bin\Debug\net5.0\Practice.runtimeconfig.dev.json
+D:\Visual Stdio\Practice\Practice\bin\Debug\net5.0\Practice.dll
+D:\Visual Stdio\Practice\Practice\bin\Debug\net5.0\ref\Practice.dll
+D:\Visual Stdio\Practice\Practice\bin\Debug\net5.0\Practice.pdb
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.csproj.AssemblyReference.cache
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.AssemblyInfoInputs.cache
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.AssemblyInfo.cs
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.csproj.CoreCompileInputs.cache
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.dll
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\ref\Practice.dll
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.pdb
+D:\Visual Stdio\Practice\Practice\obj\Debug\net5.0\Practice.genruntimeconfig.cache
