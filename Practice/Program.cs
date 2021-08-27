@@ -930,17 +930,235 @@ namespace Practice
             //}
 
             //Q82
-            string str1 = "Py@th12on";
-            string str2 = "Python 3.0";
-            string str3 = "2^sdfds*^*^jlljdslfnoswje34u230sdfds984";
+            //string str1 = "Py@th12on";
+            //string str2 = "Python 3.0";
+            //string str3 = "2^sdfds*^*^jlljdslfnoswje34u230sdfds984";
 
-            Console.WriteLine("Orginal : {0}\nChanged : {1}", str1, check(str1));
-            Console.WriteLine("Orginal : {0}\nChanged : {1}", str2, check(str2));
-            Console.WriteLine("Orginal : {0}\nChanged : {1}", str3, check(str3));
+            //Console.WriteLine("Orginal : {0}\nChanged : {1}", str1, check(str1));
+            //Console.WriteLine("Orginal : {0}\nChanged : {1}", str2, check(str2));
+            //Console.WriteLine("Orginal : {0}\nChanged : {1}", str3, check(str3));
 
-            static string check(string str)
+            //static string check(string str)
+            //{
+            //    return Regex.Replace(str, @"[^a-zA-Z]", "");
+            //}
+
+            //Q83
+            //string str1 = "Python";
+            //string str2 = "C sharp";
+            //string str3 = "JavaScrpit";
+
+            //Console.WriteLine("Orginal : {0}\nChanged : {1}", str1, check(str1));
+            //Console.WriteLine("Orginal : {0}\nChanged : {1}", str2, check(str2));
+            //Console.WriteLine("Orginal : {0}\nChanged : {1}", str3, check(str3));
+
+            //static string check(string str)
+            //{
+            //    return Regex.Replace(str, @"[A,E,I,O,U,a,e,i,o,u]", "");
+            //}
+
+            //Q84
+            //string str1 = "Python";
+            //Console.WriteLine(str1);
+            //int[] result1 = { };
+            //result1 = check(str1);
+            //foreach(var item in result1)
+            //{
+            //    Console.WriteLine(item.ToString() + " ");
+            //}
+
+            //string str2 = "JavaScrpit";
+            //Console.WriteLine(str2);
+            //int[] result2 = { };
+            //result2 = check(str2);
+            //foreach (var item in result2)
+            //{
+            //    Console.WriteLine(item.ToString() + " ");
+            //}
+
+            //static int[] check(string str)
+            //{
+            //    return str.Select((x, i) => i).Where(i => char.IsLower(str[i])).ToArray();
+            //}
+
+            //Q85
+            //double[] num1 = { 1, 3, 4, 5, 6, 7 };
+            //double[] result1 = check(num1);
+            //foreach(var i in result1)
+            //{
+            //    Console.Write(i.ToString() + "  ");
+            //}
+
+            //Console.WriteLine("\n");
+
+            //double[] num2 = { 1.2 ,-3, 4.1 ,6 ,-5.47 };
+            //double[] result2 = check(num2);
+            //foreach (var i in result2)
+            //{
+            //    Console.Write(i.ToString() + "  ");
+            //}
+
+            //static double[] check(double[] num)
+            //{
+            //    for(int i = 1; i <= num.Length - 1; i++)
+            //    {
+            //        num[i] = num[i - 1] + num[i];
+            //    }
+            //    return num;
+            //}
+
+            //Q86
+            //string str1 = "Python 3.0";
+            //string str2 = "dsfkaso230samdm2423sa";
+            //Console.WriteLine(check(str1));
+            //Console.WriteLine(check(str2));
+
+            //static string check(string str)
+            //{
+            //    int Lcounter = str.Count(char.IsLetter);
+            //    int Dcounter = str.Count(char.IsDigit);
+            //    return "String : " + str + "\n" + "Letters : " + Lcounter + "  Digit : " + Dcounter ;
+            //}
+
+            //Q87
+            //bool test = true;
+            //bool test1 = false;
+            //Console.WriteLine(check(test));
+            //Console.WriteLine(check(test1));
+
+            //static bool check(bool b)
+            //{
+            //    return b = !b;
+            //}
+
+            //Q88
+            //找內角
+            //Console.WriteLine("Input number of straight lines of the polygon : ");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Sum of the interior angles (in degrees) of the said polygon : {0}", check(num));
+
+            //static int check(int num)
+            //{
+            //    return num = 180 * (num - 2);
+            //}
+
+            //Q89
+            //int[] num1 = { 10, -11, 12, -13, 14, -18, 19, -20 };
+            //foreach(var i in num1)
+            //{
+            //    Console.Write(i.ToString() + "  ");
+            //}
+
+            //Console.WriteLine(check(num1));
+
+            //static string check(int[] num)
+            //{
+            //    var pnm = num.Where(x => x > 0);
+            //    var nnm = num.Where(x => x < 0);
+            //    return "Positive : " + pnm.Count()+"   Negative : " + nnm.Count();
+            //}
+            ////Console.WriteLine("Positive : "+Pcheck(num1)+"   Negative : "+Ncheck(num1));
+
+            ////static int Pcheck(int[] num)
+            ////{
+            ////    int Pcounter = 0;
+
+            ////    for (int i = 0; i < num.Length; i++)
+            ////    {
+            ////        if (num[i] > 0)
+            ////        {
+            ////            Pcounter += 1;
+            ////        }
+
+            ////    }
+            ////    return Pcounter; 
+            ////}
+            ////static int Ncheck(int[] num)
+            ////{
+            ////    int Ncounter = 0;
+            ////    for (int i = 0; i < num.Length; i++)
+            ////    {
+            ////        if (num[i] < 0)
+            ////        {
+            ////            Ncounter += 1;
+            ////        }                    
+            ////    }
+            ////    return Ncounter;
+            ////}
+
+            //Q90
+            //int num1 = 12;
+            //int num2 = 1234;
+            //Console.WriteLine(check(num1));
+            //Console.WriteLine(check(num2));
+
+            //static string check(int num)
+            //{
+            //    int ones = Convert.ToString(num, 2).Count(x => x == '1');
+            //    int zeros = Convert.ToString(num, 2).Count(x => x == '0');
+            //    return "Ones : " + ones + "   Zeros : " + zeros;
+            //}
+
+            //Q91
+            //object[] test = new object[6];
+            //test[0] = 25;
+            //test[1] = "Anna";
+            //test[2] = false;
+            //test[3] = DateTime.Now;
+            //test[4] = -112;
+            //test[5] = -34.67;
+            //Console.Write("Original Array : ");
+            //for(int i = 0; i < test.Length; i++)
+            //{
+            //    Console.Write(test[i] + " ");
+            //}
+
+            //Console.WriteLine("\n");
+
+            //int[] newone = check(test);
+            //Console.Write("Changed Array : ");
+            //for (int i = 0; i < newone.Length; i++)
+            //{
+            //    Console.Write(newone[i] + " ");
+            //}
+
+            //static int[] check (object[] test)
+            //{
+            //    return test.OfType<int>().ToArray();
+            //}
+
+            //Q92
+            Console.WriteLine("Input a number : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Nearest Prime Number : {0}" , check(num));
+
+            static int check(int num)
             {
-                return Regex.Replace(str, @"[^a-zA-Z]", "");
+                for (int i = 2; i < num; i++)
+                {
+                    if (num % i == 0) { num++; i = 2; }
+                    Console.WriteLine(num);
+                    Console.WriteLine(i);
+                    
+                }
+                return num;
+                //int checkpoint = 0;
+
+                //for(int i = 1; i <= num; i++)
+                //{
+                //    if (num % i == 0)
+                //    {
+                //        checkpoint += 1;
+                //    }
+                //    if (checkpoint > 2)
+                //    {
+                //        checkpoint = 0;
+                //        num = check(num + 1);
+                //        if (checkpoint == 2) break;
+                //    }
+                //}
+                //return num;
             }
         }
     }
